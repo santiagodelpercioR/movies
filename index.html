@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mumuvi searcher</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Movie searcher</h1>
-    <div id="searchbox">
-        <input type="text" id="movieName" autocomplete="off"><button id="searchbutton">search</button>
-    </div>
-    <div id="info">
-        <div id="posterbox">
-            <img id="poster" src="" alt="">
-        </div>
-        <div id="databox">
-            <h2 id="title"></h2>
-            <p id="director"></p>
-            <p id="plot"></p>
-            <p id="genre"></p>
-            <p id="runtime"></p>
-            <p id="year"></p>
-            <p id="actors"></p>
-            <p id="country"></p>
-            <p id="director"></p>
-            <p id="language"></p>
-            <p id="metascore"></p>
-        </div>
+    <header>
+         <h1>Mumuvi Searcher</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="searchForm">
+                <input type="search" id="movieName" autocomplete="off"/>
+                <button type="submit" id="searchbutton">search</button>
+            </form>
+        </section>
         
-        
-    </div>
+        <section id="movieInfo">
+            <div id="posterbox">
+                <img id="poster" src="" alt="">
+            </div>
+            <div id="databox">
+                <h2 id="title"></h2>
+                <p id="director"></p>
+                <p id="plot"></p>
+                <p id="genre"></p>
+                <p id="runtime"></p>
+                <p id="year"></p>
+                <p id="actors"></p>
+                <p id="country"></p>
+                <p id="language"></p>
+                <p id="metascore"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>footer</p>
+    </footer>
+    
 </body>
 <script src="script.js"></script>
 </html>
