@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="text" id="movieName"><button id="searchbutton">search</button>
-    <div class="info">
-        <h1 id="title"></h1>
-        <h2 id="actors"></h2>
-        <h2 id="country"></h2>
-        <h3 id="director"></h3>
-        <h4 id="language"></h4>
-        <h4 id="metascore"></h4>
-        <img id="poster" src="" alt="Poster de la película">
+    <h1>Movie searcher</h1>
+    <div id="searchbox">
+        <input type="text" id="movieName" autocomplete="off"><button id="searchbutton">search</button>
+    </div>
+    <div id="info">
+        <div id="posterbox">
+            <img id="poster" src="" alt="">
+        </div>
+        <div id="databox">
+            <h2 id="title"></h2>
+            <p id="director"></p>
+            <p id="plot"></p>
+            <p id="genre"></p>
+            <p id="runtime"></p>
+            <p id="year"></p>
+            <p id="actors"></p>
+            <p id="country"></p>
+            <p id="director"></p>
+            <p id="language"></p>
+            <p id="metascore"></p>
+        </div>
+        
+        
     </div>
 </body>
 <script src="script.js"></script>
