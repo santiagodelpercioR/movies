@@ -1,10 +1,10 @@
 * {
-    color: rgb(0, 0, 0);
-    outline: 1px solid red;
+    color: rgb(255, 255, 255);
     font-family:'Courier New', Courier, monospace;
     padding: 5px; /*increases the space between the border of a box and the content of the box. */
     border: 1px; /* adds space (even if it’s only a pixel or two) between the margin and the padding.*/
     margin: 10px; /* increases the space between the borders of a box and the borders of adjacent boxes.*/
+    background-color: rgb(0, 0, 0);
 }
 
 header{
@@ -17,11 +17,33 @@ section #searchForm{
 
 #movieInfo{
     display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 20px;
+    flex-wrap: wrap;
 }
 
-#movieInfo #posterbox #poster{
-    border-radius: 15px;
+#posterbox {
+    
+    align-self: center;
 }
+
+#posterbox img{
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+#databox {
+    border-radius: 2px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-self: self-start;
+
+    width: 900px;
+}
+
 
 footer{
     text-align: center;
